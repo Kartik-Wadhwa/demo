@@ -1,0 +1,151 @@
+<html>
+<title>Apple.com</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="D:\HTML\apple\apple.css">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body style="font-family:Arial, Helvetica, sans-serif;">
+
+<div class="header">
+ <div class="box">
+  <center> <i class="fa fa-apple logo" aria-hidden="true" ></i></center>
+   </div>
+</div>
+
+<ul class="navig">
+<li class="navig"><a class="active" href="#koko">Home</a></li>
+<li class="navig"><a href="#koko">iPad</a></li>
+<li class="navig"><a href="#koko">iPhone</a></li>
+<li class="navig"><a href="#koko">Accessories</a></li>
+<li class="navig"><a href="#koko">Other gadgets</a></li>
+<li class="navig" style="float:right;"><a href="#koko">About</a></li>
+</ul>
+
+
+
+<section style="background-color:black;">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="D:\HTML\apple\m1.jpg" style="width:100%;height:100%;">
+  <div class="captiontext">Macbook</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="D:\HTML\apple\apple-ipad.jpg" style="width:100%;height:100%;">
+  <div class="captiontext">iPad</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="D:\HTML\apple\iph12.jpg" style="width:100%;height:100%;">
+  <div class="captiontext">iPhone</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</section>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active2";
+  setTimeout(showSlides, 7000);
+}
+</script>
+
+
+
+<section style="background-color:#FEE1FE;margin-top:0;">
+
+<h3 style="font-color:magenta;font-size:50;text-align:center;font-weight:bold;padding:10px;">Why Apple ?</h3>
+
+<ul class="useapple">
+<li class="useapple">Apple is a global leader in technology</li>
+<li class="useapple">Cutting-edge products</li>
+<li class="useapple">Well-integrated devices</li>
+<li class="useapple">Unparalleled experience</li>
+<li class="useapple">Customer-oriented approach</li>
+<li class="useapple">Immersive functionality</li>
+<li class="useapple">Well thought-out strategy</li>
+</ul>
+</section>
+
+
+<div class= "leftsec">
+<img src="D:\HTML\apple\iPhone-12-and-12-mini.jpg" width=90% >
+</div>
+
+<div class= "rightsec">
+<center>
+<h1>AirTag</h1>
+<h5 style="z-index:2;">Lose your knack for losing things.</h5>
+<img src="D:\HTML\apple\Apple-AirTags-Concept-Images.jpg" width="90%" height="60%">
+</center>
+</div>
+
+
+
+
+<div class= "leftsec2">
+<center>
+
+<img src="D:\HTML\apple\AppleTV.jpg" width="90%" height="70%">
+</center>
+</div>
+
+<div class= "rightsec2">
+<center>
+<img src="D:\HTML\apple\privacy.jpg" width=100% height=400 style="margin-top:0px;">
+</center>
+</div>
+
+
+
+
+
+<div class= "leftsec3">
+<center>
+<h1 style=" color: #f2f2f2;padding: 8px 12px;top: 2px;z-index:10"><i class="fa fa-apple" aria-hidden="true" ></i>Watch</h1>
+<p  style=" color: #f2f2f2;padding: 8px 12px;top: 2px;z-index:10">The future of health is on your wrist.</p>
+<img src="D:\HTML\apple\iwatch.jpg" width="90%" height="63.5%">
+
+</center>
+</div>
+
+
+<div class= "rightsec3">
+<center>
+<h1 style=" color: #f2f2f2;padding: 8px 12px;top: 2px;z-index:10">Why Mac?</h1>
+<p  style=" color: #f2f2f2;padding: 8px 12px;top: 2px;z-index:10">Incredible power.Incredibly simple.</p>
+<img src="D:\HTML\apple\mac50.jpg" width=100% height=397 >
+</center>
+</div>
+
+
+
+
+</body>
+</html>
